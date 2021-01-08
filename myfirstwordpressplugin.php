@@ -17,8 +17,8 @@ function tutsplus_movie_styles() {
 add_action( 'wp_enqueue_scripts', 'tutsplus_movie_styles' );
 
 // for scripts
-function tutsplus_movie_styles() {
-    wp_enqueue_script( 'movies',  plugin_dir_url( __FILE__ ) . '/js/scripts.js' );                      
+function tutsplus_movie_scripts() {
+    wp_enqueue_script( 'movies',  plugin_dir_url( __FILE__ ) . '/js/script.js' );                      
 }
 add_action( 'wp_enqueue_scripts', 'tutsplus_movie_styles' );
 
