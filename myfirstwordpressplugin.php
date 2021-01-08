@@ -9,8 +9,16 @@ Author URI: https://danielmabadeje.netlify.app/
 License: GPLv2 or later
 Text Domain: firstplugin
 */
+
+// for styles
 function tutsplus_movie_styles() {
-    wp_enqueue_style( 'movies',  plugin_dir_url( __FILE__ ) . '/css/movies.css' );                      
+    wp_enqueue_style( 'movies',  plugin_dir_url( __FILE__ ) . '/css/style.css' );                      
+}
+add_action( 'wp_enqueue_scripts', 'tutsplus_movie_styles' );
+
+// for scripts
+function tutsplus_movie_styles() {
+    wp_enqueue_script( 'movies',  plugin_dir_url( __FILE__ ) . '/js/scripts.js' );                      
 }
 add_action( 'wp_enqueue_scripts', 'tutsplus_movie_styles' );
 
